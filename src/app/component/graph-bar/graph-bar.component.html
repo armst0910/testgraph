@@ -1,0 +1,10 @@
+<div *ngIf="check; else loading" style="width: 1000px">
+  <p-chart type="bar" [data]="data" (onDataSelect)="selectData($event)"></p-chart>
+</div>
+
+<ng-template #loading>
+  <i class="fa fa-spinner fa-pulse fa-5x fa-fw middle"></i>
+</ng-template>
+
+<!--<div>Hi, my name is {{clickObj}}</div>-->
+<!--<p>at your service, {{masterName}}.</p>-->
